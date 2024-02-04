@@ -4,7 +4,7 @@
 //
 //  Created by Mukthar Amiyan on 07/01/24.
 //
-
+import SwiftData
 import SwiftUI
 
 @main
@@ -13,5 +13,6 @@ struct FaceFactApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Person.self)
     }
 }
